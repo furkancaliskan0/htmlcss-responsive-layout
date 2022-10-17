@@ -93,7 +93,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: flex-end;
-    gap: 40px;
+    gap: 50px;
 }
 
 .second .text{
@@ -128,4 +128,40 @@ main {
     height: 75%;
     /* DEBUG */
     background-color: brown;
+}
+.citation > .card{
+    width: 100%;
+    margin: 30px 0;
+    /* DEBUG */
+    background-color: blue;
+    height: calc(100% / 3 - 30px)
+}
+
+.fourth{
+    background-color: #9792e4;
+    margin-top: 68px;
+    /* DEBUG */
+    min-height: 1000px;
+}
+
+.fourth .row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.fourth .text{
+    background-color: cyan;
+    height: 200px;
+    width: 100%;
+}
+
+.fourth .card{
+    height: 500px;
+    width: calc(100% / 3 - 30px);
+    /* DEBUG */
+    background-color: lime;
+    border: 1px solid black;
 }
