@@ -204,3 +204,19 @@ main {
     height: 80%;
     background-color: green;
 }
+
+/* Footer Rules */
+footer{
+    height: 170px;
+    background-color: #272626;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer > .container{
+    width: 28%;
+    height: 75%;
+    /* DEBUG */
+    background-color: darkred;
+}
