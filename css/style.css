@@ -165,3 +165,25 @@ main {
     background-color: lime;
     border: 1px solid black;
 }
+
+.fifth{
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    /* DEBUG */
+    height: 800px;
+}
+
+.fifth > .text{
+    flex-basis: 65%;
+    height: 100%;
+    /* DEBUG */
+    background-color: chocolate;
+}
+
+.fifth > .image{
+    flex-basis: 25%;
+    height: 100%; 
+    /* DEBUG */
+    background-color: black;
+}
