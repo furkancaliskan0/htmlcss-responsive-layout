@@ -11,6 +11,7 @@ body{
 }
 
 .container{
+    max-width: 1500px;
     width: 60%;
     margin: 0 auto;
     height: 100%;
@@ -39,16 +40,20 @@ header {
     top: 0px;
     left: 0px;
     right: 0px;
-    height: 65px;
+    height: 75px;
     z-index: 100;
     /* /* DEBUG  */
     background-color: #0985fa;
 
+
 }
+
+header > .container{
+    height: 100%;
+}
+
 nav{
-    max-width: 1750px;
-    height: 55px;
-    margin: 0 auto;
+    height: 100%;
 }
 
 nav > ul {
@@ -84,9 +89,7 @@ nav a{
 
 /* Main Rules */
 main {
-    max-width: 1570px;
-    margin: 0 auto;
-    padding-top: 70px;
+    padding-top: 75px;
     /* debug */
     /* background-color: crimson; */
 }
@@ -130,11 +133,11 @@ main {
 .first .double.card  a{
     display: inline-block;
     color: white;
-    font-weight: 490;
+    font-weight: 500;
     font-size: 12px;
     display: inline-block;
     margin-bottom: 10px;
-    padding: 6px 30px;
+    padding: 7px 50px;
     border-radius: 18px;
     background-color: #0a82f1;
 }
@@ -177,8 +180,7 @@ main {
 .second {
     background-color: #9994df;
     margin-top: 90px;
-    /* DEBUG */
-    height: 700px;
+    min-height: 500px;
 }
 
 .second > .container{
@@ -193,6 +195,7 @@ main {
     width: 50%;
     padding: 0 30px;
     line-height: 140%;
+    margin: 100px 0 50px;
     /* DEBUG*/
     /* background-color: rgb(243, 166, 138); */
 }
@@ -203,12 +206,22 @@ main {
 }
 
 .second h3{
-    font-size: 15px;
+    font-size: 17px;
+    font-style: normal;
+    margin: 10px 0;
 }
 
 .second .text p{
+    min-height: 50%;
+    background-color: white;
+    text-align: center;
     font-size: 10px; 
     color: white;
+    padding: 20px 30px;
+    border-radius: 40px;
+    align-self: flex-end;
+    margin-bottom: 50px;
+    font-style: italic;
 }
 
 .second .text img{
@@ -228,29 +241,27 @@ main {
 }
 
 .second .image p{
-    font-weight: 280;
+    font-weight: lighter;
     font-size: 12px;
     margin: 8px 0;
-    line-height: 160%;
+    line-height: 180%;
 }
 
 .second .image img{
-    width: 70%;
+    width: 80%;
 }
 
 .second .image a{
-    background-color: #9792e4;
-    padding: 8px 12px;
-    font-size: 12px;
+    font-size: 14px;
     border-radius: 100%;
     display: inline-block;
-    margin: 18px 0;
+    margin: 15px 0 10px;
 }
 
 /* Third section   */
 
 .third{
-    background-color: orange;
+    /* background-color: orange; */
     margin-top: 65px;
     /* DEBUG */
     height: 890px;
@@ -354,7 +365,7 @@ main {
 .fourth .row{
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 25px;
 }
@@ -407,44 +418,106 @@ main {
 /* Fifth section */
 
 .fifth{
-    margin-top: 140px;
+    min-height: 550px;
+    width: 65%;
+    margin-top: 45px;
     display: flex;
     justify-content: center;
     /* DEBUG */
-    height: 800px;
+    /* height: 800px; */
 }
 
 .fifth > .text{
-    flex-basis: 65%;
-    height: 100%;
+    padding-right: 20px;
+    flex-basis: 55%;
+    font-weight: 600;
     /* DEBUG */
-    background-color: chocolate;
+    /* background-color: chocolate; */
+}
+
+.fifth .text p{
+    font-size: 12px;
+    line-height: 240%;
+    font-weight: lighter;
+}
+
+.fifth.text #text-fifth{
+    margin: 30px 0;
 }
 
 .fifth > .image{
-    flex-basis: 25%;
-    height: 100%; 
-    /* DEBUG */
-    background-color: black;
+    flex-basis: 35%;
+    padding-left: 35px;
+}
+
+.fifth .circle-image{
+    height: 190px;
+    width: 190px;
+    border-radius: 45%;
+    position: relative;
+    background-image: url("../img/about.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.fifth .image a{
+    border-radius: 18px;
+    font-size: 10px;
+    font-weight: 300;
+    background-color: #9792e4;
+    color: white;
+    padding: 5px 15px;
+}
+
+.fifth .image .text{
+    color: #8c87d1;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 18px 0;
+}
+
+.fifth .circle-image > i{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #8680d3;
+    font-size: 58px;
+}
+
+.fifth> .text h2{
+    font-size: 38px;
+}
+.fifth > .text{
+    padding: 0 8px;
+    margin-bottom: 18px;
+}
+.fifth .image{
+    padding: 0 10px;
+}
+.fifth > .image .circle-image{
+    width: 180px;
+    height: 180px;
 }
 
 /* Sixth section */
 
 .sixth{
     background-color: #9792e4;
-    margin-top: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
+    padding: 50px 0;
+    min-height: 350px;
+    text-align: center;
+    color: white;
     /* DEBUG */
-    height: 500px;
+    /* height: 500px; */
 }
 
 .sixth > .container{
-    width: 40%;
-    /* DEBUG */
-    height: 80%;
-    background-color: green;
+    width: 60%;
 }
 
 /* Footer Rules */
@@ -511,8 +584,9 @@ footer > .container{
         height: 50%;
     }
     
-    .third .citation .image{
-        width: 190px;
+    .third .citation .image .circle-image{
+        width: 150px;
+        height: 150px;
     }
     .third .citation .words{
         padding: 0 20px;
@@ -523,10 +597,31 @@ footer > .container{
     }
 
     .fifth > .text{
-        flex-basis: 60%;
+        padding-right: 48px;
+        font-weight: 600;
+        flex-basis: 55%;
     }
     .fifth > .image{
+        padding-left: 45px;
         flex-basis: 40%;
+    }
+
+    .fifth > .text p{
+        font-size: 14px;
+    }
+    .fifth > .text h2{
+        font-size: 56px;
+    }
+
+    .fifth > .image .text{
+        font-size: 25px;
+    }
+    .fifth > .image .circle-image{
+        width: 220px;
+        height: 220px;
+    }
+    .fifth > .image a{
+        font-size: 14px;
     }
 
     .sixth > .container{
@@ -569,6 +664,7 @@ footer > .container{
     }
 
     .third .card .image{
+        height: 160px;
         width: 160px;
         margin: 0 0 20px;
     }
