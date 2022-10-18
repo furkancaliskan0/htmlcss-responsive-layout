@@ -520,6 +520,62 @@ main {
     width: 60%;
 }
 
+.sixth .bottom{
+    width: 45%;
+    margin: 0 auto;
+}
+
+
+.sixth p{
+    font-size: 14px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 170%;
+}
+
+.sixth .bottom > a{
+    background-color: white;
+    color: #9792e4;
+    padding: 20px 70px;
+    border-radius: 50px;
+    font-weight: bold;
+    display: inline-block;
+    margin: 20px 0;
+}
+
+.sixth.copyright{
+    font-size: 12px;
+}
+
+.sixth span{
+    font-size: 25px;
+    font-weight: bold;
+    vertical-align: sub;
+}
+
+.sixth .copyright a{
+    color: white;
+    text-decoration: underline;
+}
+
+.sixth h2{
+    font-size: 67px;
+    color: #fdc15f;
+    margin: 10px 0;
+}
+
+.sixth h5{
+    font-weight: lighter;
+    font-size: 16px;
+    color: lightgray;
+    margin-bottom: 10px;
+}
+
+.sixth h3{
+    font-size: 35px;
+}
+
+
 /* Footer Rules */
 footer{
     height: 170px;
