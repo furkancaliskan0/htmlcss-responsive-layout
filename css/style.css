@@ -48,6 +48,7 @@ header {
 nav{
     max-width: 1750px;
     height: 55px;
+    margin: 0 auto;
 }
 
 nav > ul {
@@ -66,15 +67,15 @@ nav > ul > div {
 
 nav > ul > ul{
     height: 100%;
-    display: flex;
+    display: flex; 
     justify-content: space-evenly;
     align-items: center;
     gap: 15px;
     list-style: none;
 }
 
-nav > ul > img{
-    height: 50%;
+nav > ul > a > img{
+    width: 75%;
 }
 
 nav a{
@@ -83,6 +84,8 @@ nav a{
 
 /* Main Rules */
 main {
+    max-width: 1570px;
+    margin: 0 auto;
     padding-top: 70px;
     /* debug */
     /* background-color: crimson; */
@@ -92,7 +95,7 @@ main {
 .first {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 10px;
     margin-top: 25px;
@@ -251,29 +254,95 @@ main {
     height: 890px;
 }
 .third > .text{
+    width: 100%;
+    height: 20%;
+    min-height: 180px;
+    text-align: center;
     /* DEBUG */
     /* background-color: red; */
-    width: 100%;
+    /* width: 100%; */
     /* height: 18%; */
+}
+.third h5{
+    font-weight: 300;
+}
+
+.third h2{
+    color: #9792e4;
+    font-size: 35px;
+    margin: 10px 0 20px;
+}
+
+.third p{
+    font-weight: 300;
+    font-size: 15px;
 }
 
 .third > .citation{
     width: 100%;
-    height: 75%;
-    /* DEBUG */
-    background-color: brown;
+    min-height: 700px
 }
 .citation > .card{
     width: 100%;
     margin: 30px 0;
-    /* DEBUG */
-    background-color: blue;
-    height: calc(100% / 3 - 30px)
+    background-color: #8f89da;
+    min-height: 190px;
+    border-radius: 25px;
+    padding: 18px 0;
+    color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.citation .circle-image{
+    width: 100%;
+    height: 160px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.citation .image{
+    width: 180px;
+    margin-left: 18px;
+}
+
+.circle-image.one{
+    background-image: url("../img/testimonial1.jpg");
+}
+
+.circle-image.two{
+    background-image: url("../img/testimonial2.jpg");
+}
+
+.circle-image.three{
+    background-image: url("../img/testimonial3.jpg");
+}
+
+.citation .words{
+    width: 80%;
+    padding: 0 38px;
+}
+
+.citation .comment{
+    font-size: 12px;
+    line-height: 200%;
+}
+
+.citation .comment i{
+    font-size: 18px;
+}
+
+.citation .name{
+    font-weight: 690;
+    font-size: 15px;
+    margin-top: 12px;
 }
 
 .fourth{
     background-color: #9792e4;
-    margin-top: 68px;
+    margin-top: 28px;
     /* DEBUG */
     min-height: 1000px;
 }
@@ -402,6 +471,13 @@ footer > .container{
         width: 100%;
         height: 50%;
     }
+    
+    .third .citation .image{
+        width: 190px;
+    }
+    .third .citation .words{
+        padding: 0 20px;
+    }
 
     .fourth .card{
         width: 47%;
@@ -423,10 +499,47 @@ footer > .container{
     }
 }
 
-
-@media screen and (max-width: 450px){
-    .first > .card, .first > .double.card{
+/* smartphone version */
+@media screen and (max-width: 480px){
+    .first > .card{
         width: 100%;
+    }
+
+    .first > .double.card{
+        padding-top: 68px;
+        width: 100%;
+    }
+
+    .first .double.card .image{
+        display: flex;
+        justify-content: center;
+    }
+    .first .double.card .text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .first .double.card h4{
+        font-size: 23px;
+        font-weight: 700;
+    }
+
+    .second .text h2{
+        font-size: 30px;
+    }
+
+    .third .card .image{
+        width: 160px;
+        margin: 0 0 20px;
+    }
+    .third .card{
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+    .third .citation .words{
+        padding: 0px 0px;
     }
 
     .fourth .card{
