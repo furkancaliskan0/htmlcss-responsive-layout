@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -211,9 +212,24 @@ main {
     margin: 10px 0;
 }
 
+                
+#text-second {
+    min-height: 20%;
+    background-color: white;
+    text-align: center;
+    font-size: 10px; 
+    color: black;
+    padding: 10px 15px;
+    border-radius: 30px;
+    align-self: flex-end;
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+
+
 .second .text p{
     min-height: 50%;
-    background-color: white;
     text-align: center;
     font-size: 10px; 
     color: white;
@@ -248,7 +264,7 @@ main {
 }
 
 .second .image img{
-    width: 80%;
+    width: 70%;
 }
 
 .second .image a{
@@ -586,12 +602,28 @@ footer{
 }
 
 footer > .container{
-    width: 28%;
-    height: 75%;
-    max-width: 1400px;
-    
+    width: 20%;
+    height: 100%;
     /* DEBUG */
-    background-color: rgb(124, 0, 0);
+    /* background-color: rgb(124, 0, 0); */
+}
+
+footer .text{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+footer a{
+    color: #9792e4;
+    text-decoration: underline;
 }
 /* Tablet Version */
 @media screen and (max-width: 850px){
@@ -609,6 +641,10 @@ footer > .container{
     .first .double.card .text{
         width: 100%;
         height: 30%;
+    }
+
+    .first .double.card  a{
+        padding: 7px 50px;
     }
     .first .image{
         width: 100%;
@@ -640,6 +676,16 @@ footer > .container{
         height: 50%;
     }
     
+    .second .image p{
+        font-size: 16px;
+    }
+    .second .image a{
+        font-size: 18px;
+        font-weight: 500;
+        padding: 12px 18px;
+    }
+
+
     .third .citation .image .circle-image{
         width: 150px;
         height: 150px;
@@ -653,7 +699,7 @@ footer > .container{
     }
 
     .fifth > .text{
-        padding-right: 48px;
+        padding-right: 10px;
         font-weight: 600;
         flex-basis: 55%;
     }
@@ -667,6 +713,12 @@ footer > .container{
     }
     .fifth > .text h2{
         font-size: 56px;
+        text-align: center;
+    }
+
+    .fifth > .image{
+        flex-basis: 40%;
+        padding-left: 40px;
     }
 
     .fifth > .image .text{
@@ -684,8 +736,22 @@ footer > .container{
         width: 80%;
     }
 
+    .sixth .bottom{
+        width: 65%;
+        margin: 0 auto;
+    }
+
+    footer .text{
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    footer{
+        height: 200px;
+    }
+
     footer > .container{
-        width: 60%;
+        width: 50%;
     }
 }
 
@@ -715,8 +781,16 @@ footer > .container{
         font-weight: 700;
     }
 
+    .first .double.card  a{
+        padding: 7px 40px;
+    }
+
     .second .text h2{
         font-size: 28px;
+    }
+
+    .second.text p{
+        line-height: 200%;
     }
 
     .third .card .image{
@@ -748,11 +822,32 @@ footer > .container{
         flex-basis: 100%;
     }
 
+    .fifth > .text h2{
+        font-size: 40px;
+    }
+    .fifth > .text{
+        padding: 0 10px;
+        margin-bottom: 20px;
+    }
+    .fifth .image{
+        padding: 0 10px;
+        text-align: center;
+    }
+    .fifth > .image .circle-image{
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+    }
+
     .sixth > .container{
         width: 85%;
     }
 
     footer > .container{
         width: 85%;
+    }
+
+    footer{
+        height: 220px;
     }
 }
