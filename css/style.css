@@ -247,6 +247,8 @@ main {
     margin: 18px 0;
 }
 
+/* Third section   */
+
 .third{
     background-color: orange;
     margin-top: 65px;
@@ -296,7 +298,7 @@ main {
 }
 
 .citation .circle-image{
-    width: 100%;
+    width: 150px;
     height: 160px;
     border-radius: 50%;
     background-position: center;
@@ -340,6 +342,8 @@ main {
     margin-top: 12px;
 }
 
+/* Fourth section  */
+
 .fourth{
     background-color: #9792e4;
     margin-top: 28px;
@@ -363,11 +367,44 @@ main {
 
 .fourth .card{
     height: 500px;
-    width: calc(100% / 3 - 30px);
-    /* DEBUG */
-    background-color: lime;
-    border: 1px solid black;
+    width: calc(100% / 3 - 20px);
+    color: #a39fe0;
+    background-color: white;
+    border-radius: 18px;
+    padding: 18px 36px 27px;
+    font-size: 16px;
 }
+
+.fourth p{
+    color: gray;
+    font-size: 10px;
+    line-height: 170%;
+    margin: 18px 0;
+}
+
+.fourth a{
+    background-color: #9b96dd;
+    color: white;
+    padding: 7px 36px;
+    border-radius: 18px;
+    font-size: 10px;
+    font-weight: 580;
+}
+
+.fourth .big-num{
+    font-size: 52px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.fourth h2{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Fifth section */
 
 .fifth{
     margin-top: 140px;
@@ -390,6 +427,8 @@ main {
     /* DEBUG */
     background-color: black;
 }
+
+/* Sixth section */
 
 .sixth{
     background-color: #9792e4;
@@ -521,12 +560,12 @@ footer > .container{
         align-items: center;
     }
     .first .double.card h4{
-        font-size: 23px;
+        font-size: 20px;
         font-weight: 700;
     }
 
     .second .text h2{
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .third .card .image{
@@ -542,8 +581,12 @@ footer > .container{
         padding: 0px 0px;
     }
 
+    .fourth .card p{
+        font-size: 12px;
+    }
     .fourth .card{
         width: 100%;
+        padding: 20px 30px 30px;
     }
 
     .fifth{
