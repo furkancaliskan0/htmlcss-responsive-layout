@@ -8,7 +8,7 @@
 
 body{
     font-family: 'Open Sans', sans-serif;
-    background-color: azure;
+    background-color: white;
 }
 
 .container{
@@ -30,6 +30,12 @@ a{
     border-radius: 20px;
     padding: 5px 12px;
 
+}
+
+.btn-white:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    color: #0084fd;
+    text-decoration: none;
 }
 
 
@@ -84,6 +90,11 @@ nav > ul > a > img{
     width: 75%;
 }
 
+nav a:hover{
+    text-decoration: underline;
+}
+
+
 nav a{
     color: white;
 }
@@ -101,8 +112,8 @@ main {
     justify-content: space-evenly;
     align-items: stretch;
     flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 25px;
+    gap: 15px;
+    margin-top: 30px;
     /* debug */
     /* background-color: coral ; */
     /* min-height: 600px; */
@@ -125,7 +136,7 @@ main {
     justify-content: center;
     flex-wrap: wrap;
     text-align: left;
-    padding: 0 18px;
+    padding: 0 20px;
     align-items: flex-end;
     min-height: 260px;
     width: calc( (100% / 3) * 2 - 15px);
@@ -173,6 +184,11 @@ main {
     align-self: flex-start
 }
 
+.first .double.card  a:hover{
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
 .first .icon  i{
     color: #0483fa;
     font-size: 65px;
@@ -189,7 +205,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 45%;
-    gap: 8px;
+    gap: 10px;
 }
 
 .second .text{
@@ -220,10 +236,10 @@ main {
     font-size: 10px; 
     color: black;
     padding: 10px 15px;
-    border-radius: 30px;
+    border-radius: 70px;
     align-self: flex-end;
-    margin-bottom: 40px;
-    font-style: italic;
+    margin-bottom: 20px;
+
 }
 
 
@@ -264,7 +280,11 @@ main {
 }
 
 .second .image img{
-    width: 70%;
+    width: 60%;
+}
+
+.second .image a:hover{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
 .second .image a{
@@ -277,10 +297,11 @@ main {
 /* Third section   */
 
 .third{
-    /* background-color: orange; */
+    max-width: 1400px;
+    margin: auto;
     margin-top: 65px;
     /* DEBUG */
-    height: 890px;
+    /* height: 890px; */
 }
 .third > .text{
     width: 100%;
@@ -372,10 +393,11 @@ main {
 /* Fourth section  */
 
 .fourth{
+    padding: 100px 0;
     background-color: #9792e4;
-    margin-top: 28px;
+    margin-top: 40px;
     /* DEBUG */
-    min-height: 1000px;
+    /* min-height: 1000px; */
 }
 
 .fourth .row{
@@ -398,7 +420,7 @@ main {
     color: #a39fe0;
     background-color: white;
     border-radius: 18px;
-    padding: 18px 36px 27px;
+    padding: 20px 40px 30px;
     font-size: 16px;
 }
 
@@ -424,6 +446,10 @@ main {
     margin-bottom: 8px;
 }
 
+.fourth a:hover{
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
 .fourth h2{
     font-size: 35px;
     color: white;
@@ -435,8 +461,10 @@ main {
 
 .fifth{
     min-height: 550px;
-    width: 65%;
+    width: 70%;
     margin-top: 45px;
+    margin: 0 auto;
+    padding: 100px 0;
     display: flex;
     justify-content: center;
     /* DEBUG */
@@ -511,6 +539,12 @@ main {
 .fifth .image{
     padding: 0 10px;
 }
+
+.fifth .image a:hover{
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.3);
+}
+
+
 .fifth > .image .circle-image{
     width: 180px;
     height: 180px;
@@ -559,6 +593,13 @@ main {
     margin: 20px 0;
 }
 
+.sixth .bottom > a:hover{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    border: 2px solid #9792e4;
+}
+
+
 .sixth.copyright{
     font-size: 12px;
 }
@@ -575,9 +616,15 @@ main {
 }
 
 .sixth h2{
+    display: inline-block;
+    cursor: context-menu;
     font-size: 67px;
     color: #fdc15f;
     margin: 10px 0;
+}
+
+.sixth h2:hover{
+    text-decoration: underline;
 }
 
 .sixth h5{
@@ -606,6 +653,10 @@ footer > .container{
     height: 100%;
     /* DEBUG */
     /* background-color: rgb(124, 0, 0); */
+}
+
+footer a:hover{
+    color: blueviolet;
 }
 
 footer .text{
